@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventunesimo Selfwork Javascript</title>
+</head>
+<body>
+    <script>
+        let scelta;
+        scelta=prompt(`Inserire:
+        1. Acqua
+        2. Coca cola
+        3. Birra`);
+        flag=false;
+        while(flag==false){
+            switch (true){
+            case Number(scelta) == 1:
+                console.log("E' stata selezionata l'acqua");
+                flag=true;
+            break;
+            case Number(scelta) == 2:
+                console.log("E' stata selezionata coca cola");
+                flag=true;
+            break;
+            case Number(scelta) == 3:
+                console.log("E' stata selezionata birra");
+                flag=true;
+            break;
+            default:
+            scelta=prompt(`Comando non riconosciuto! Reinserire la propria scelta`);
+            break;
+        }
+        }
+    </script>
+</body>
+</html>
